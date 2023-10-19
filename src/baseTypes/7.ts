@@ -7,12 +7,13 @@ enum DayOfWeek {
   Monday,
   Thursday,
   Wednesday,
-  Thersday,
+  Thirsday,
   Friday,
   Saturday,
   Sunday,
 }
 
-function isWeekend(day: string): boolean {
+function isWeekend(day: DayOfWeek): boolean {
+return day === DayOfWeek.Saturday || day === DayOfWeek.Sunday;
 
 }
